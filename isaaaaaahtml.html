@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCATALOGO - Maimoni Veículos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+.btncarro{
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(174, 66, 27);
+    color: white;
+    cursor: pointer;
+}
+
+.btncarro:hover{
+    background-color: white;
+    color: rgb(174, 66, 27);
+}
+
+.card{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card h2{
+    margin-top: 10px;
+}
+
+.card p{
+    margin-top: 8px;
+}
+
+@media(max-width:750px){
+
+    section{
+        grid-template-columns: 1fr!important;
+    }
+
+}
+@media(max-width: 750px){
+
+    section{
+        grid-template-columns: 1fr !important;
+    }
+
+    .btnnav{
+        width: 90px !important;
+        font-size: 12px;
+        margin-left: 3px;
+    }
+
+    header{
+        height: auto !important;
+        padding: 15px 5px;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+}
+</style>
+<header style="background-color: rgb(0, 0, 0);height: 10vh;display: flex;align-items: center;justify-content: center;"> <!-- cabeçalho da pagina-->
+
+    <nav style="display: flex;align-items: center;" >
+        <img src="https://scontent.cdninstagram.com/v/t51.2885-19/465833398_531156846561348_4004186599650738337_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=h_dphmfWzLcQ7kNvwGIo9rW&_nc_oc=Adpo554YloJnYGiKMhisCYPB6Lrbv7mT58mpvQev2FxtoKMyKfbT52A7uzPJBD8EqJg&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_ss=7a689&oh=00_AQEL58S_tgydi6Dcoxmyw9ytp_K07uotSDW356jqyIEOCA&oe=6A839D09" 
+        alt="" height="30px" width="50px">
+
+        <a href="./index.html"><button class="btnnav">Inicio</button></a>
+        <a href="./Sobrenós.html"><button class="btnnav">Sobre Nós</button></a>
+        <a href="./trabalhe.html"><button class="btnnav">CATALOGO</button></a>
+    </nav>
+
+</header>
+
+   <main style="background-color: rgb(42, 40, 40); min-height: 70vh; padding: 30px;">
+
+    <h1 style="color: white; text-align: center;">
+        CATÁLOGO DE VEÍCULOS
+    </h1>
+
+    <br>
+
+    <section style="
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    ">
+
+        <!-- CARRO 1 -->
+        <div class="card">
+            <img 
+                src="https://cdn.carrosp.com.br/img/13//ford-ecosport-1.6-4p-7642266-73221504.webp"
+                width="100%"
+                height="180px"
+                style="object-fit: cover;"
+            >
+
+            <h2>Fordecosport</h2>
+
+            <p>Ano: 2013</p>
+            <p>Quilometragem: 123.500 km</p>
+            <p>1.6 4P Freestyle XLT Flex </p>
+            <h2>R$ 53.900</h2>
+
+            <button class="btncarro">
+                Ver detalhes
+            </button>
+        </div>
+
+
+        <!-- CARRO 2 -->
+        <div class="card">
+
+            <img 
+                src="https://cdn.carrosp.com.br/img/13//peugeot-207-hatch-1.-7658461-73633205.webp"
+                width="100%"
+                height="180px"
+                style="object-fit: cover;"
+            >
+
+            <h2>Peugeot207 Hatch</h2>
+
+            <p>Ano: 2012</p>
+            <p>Quilometragem: 59.300 km</p>
+            <p>1.4 4P XR Flex  </p>
+            <h2>R$ 27.900</h2>
+
+            <button class="btncarro">
+                Ver detalhes
+            </button>
+
+        </div>
+
+
+        <!-- CARRO 3 -->
+        <div class="card">
+
+            <img 
+                src="https://cdn.carrosp.com.br/img/13//honda-fit-1.4-16v-4p-7669236-73913939.webp"
+                width="100%"
+                height="180px"
+                style="object-fit: cover;"
+            >
+
+            <h2>Hondafit</h2>
+
+            <p>Ano: 2009</p>
+            <p>Quilometragem: 158.300 km</p>
+<p>1.4 16V 4P LX Flex</p>
+            <h2>R$ 41.900</h2>
+
+            <button class="btncarro">
+                Ver detalhes
+            </button>
+
+        </div>
+
+
+        <!-- CARRO 4 -->
+        <div class="card">
+
+            <img 
+                src="https://cdn.carrosp.com.br/img/13//ford-ecosport-1.6-4p-7631533-72973610.webp"
+                width="100%"
+                height="180px"
+                style="object-fit: cover;"
+            >
+
+            <h2>Fordecosport</h2>
+            <p>Ano: 2014</p>
+            <p>Quilometragem:  142.500 KM</p>
+<p>1.6 4P S Sigma Flex</p>
+            <h2>R$  51.900
+
+</h2>
+
+            <button class="btncarro">
+                Ver detalhes
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
